@@ -1,0 +1,38 @@
+<h1>EAT-DA-BURGER!</h1>
+
+<div>
+<img src="https://us.123rf.com/450wm/cookelma/cookelma1502/cookelma150200141/36986768-tasty-and-appetizing-hamburger-cheeseburger.jpg?ver=6" alt="" width="100px">
+</div>
+<section class="burgers_devoure">
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burger/burgers devoured=false}}
+    {{/unless}}
+  {{/each}}
+</ul>
+</section>
+
+<section class="burgers_devoured">
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+    {{> burger/devoured devoured=true}}
+    {{/if}}
+  {{/each}}
+</ul>
+</section>
+
+<div class="form">
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <button type="submit">Submit</button>
+</form>
+
+<p>Enter a burger you want to eat, Click the "Submit" button</p>
+</div>

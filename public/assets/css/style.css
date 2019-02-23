@@ -1,0 +1,53 @@
+body{
+    background-color: burlywood;
+}
+
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: whitesmoke;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+
+.burgers_devoure,
+.burgers_devoured,
+.form{
+    float: left;
+    /* position: relative; */
+  }
+
+.burgers_devoure,
+.burgers_devoured{
+    width: 50%;
+}  
+
+.form{
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
